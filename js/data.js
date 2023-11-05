@@ -33,7 +33,6 @@ const NAMES = [
   'Анастасия'
 ];
 
-//Возвращение комментария в виде объекта
 const createMessage = () => Array.from(
   {length: getRandomInteger(1, 2)},
   () => getRandomArrayElement(COMMENTS),
@@ -46,7 +45,6 @@ const createComment = () => ({
   name: getRandomArrayElement(NAMES)
 });
 
-//Возвращение фотографии в виде объекта
 const createPhoto = () => ({
   id: generatePhotoId(),
   url: `photos/${getRandomInteger(1, PHOTO_COUNT)}.jpg`,
