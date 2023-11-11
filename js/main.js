@@ -1,4 +1,5 @@
 import './util.js';
-import {createPhoto} from './data.js';
+import {getPictures} from './data.js';
+import {renderThumbnails} from './thumbnail.js';
 
-Array.from({length: 25}, createPhoto);
+renderThumbnails(getPictures());

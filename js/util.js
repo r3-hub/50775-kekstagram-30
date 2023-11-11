@@ -17,7 +17,4 @@ const generateId = () => {
   };
 };
 
-const generatePhotoId = generateId();
-const generateCommentId = generateId();
-
-export {getRandomInteger, getRandomArrayElement, generatePhotoId, generateCommentId};
+export { getRandomInteger, getRandomArrayElement, generateId };
